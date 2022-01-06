@@ -2,7 +2,7 @@
 using namespace std;
 #define SIZE 10
 
-int queue[10], front = - 1, rear = - 1; //global variables fron and rear set to -1
+int queue[SIZE], front = - 1, rear = - 1; //global variables fron and rear set to -1
 void Enqueue() { //inserting function for quwuw
    int val;
    if (rear == SIZE - 1) //condition to check queue overflow
@@ -22,7 +22,7 @@ void Dequeue() { //remove the data from front of the queue
       return ;
    } else {
       cout<<"Element deleted from queue is : "<< queue[front] <<endl;//always delete from the front of the queue
-      front++;;
+      front++;
    }
 }
 void Display() {
